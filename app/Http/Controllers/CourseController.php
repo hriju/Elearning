@@ -28,6 +28,7 @@ class CourseController extends Controller
     public function create()
     {
         //
+        return view('course.create');
     }
 
     /**
@@ -38,7 +39,19 @@ class CourseController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'title'=>'required',
+            'description'=>'required',
+            'status'=>'required'
+        ]);
+        $course = new Course([
+            'title' => $request->get('title'),
+            'description' => $request->get('description'),
+            'status' => $request->get('status')
+
+        ]);
+        $course->save();
+        return redirect('/manageCourse')->with('success', 'Course saved!');
     }
 
     /**
@@ -64,6 +77,8 @@ class CourseController extends Controller
     public function edit($id)
     {
         //
+        $course = Course::find($id);
+        return view('course.edit', compact('course'));
     }
 
     /**
@@ -76,6 +91,17 @@ class CourseController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $request->validate([
+            'title'=>'required',
+            'description'=>'required',
+            'status'=>'required'
+        ]);
+        $course = Course::find($id);
+        $course->title =  $request->get('title');
+        $course->description = $request->get('description');
+        $course->status = $request->get('status');
+        $course->save();
+        return redirect('/manageCourse')->with('success', 'Course updated!');
     }
 
     /**
@@ -86,6 +112,9 @@ class CourseController extends Controller
      */
     public function destroy($id)
     {
-        //
+        //write code for deleting that particular row
+        $course = Course::find($id);
+        $course->delete();
+        return redirect('/manageCourse')->with('success', 'Course deleted!');
     }
 }

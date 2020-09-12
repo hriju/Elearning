@@ -15,9 +15,9 @@
                     @endif
                     @if (Auth::user()->role=='admin')
                       <div class="row">
-                          <div class="col-md-4">Manage Course</div>
-                          <div class="col-md-4">Manage Lesson</div>
-                          <div class="col-md-4">Manage Question</div>
+                          <div class="col-md-4"><a href="{{route('manageCourse.index')}}">Manage Course</a></div>
+                          <div class="col-md-4"><a href="/manageLesson">Manage Lesson</a></div>
+                          <div class="col-md-4"><a href="/manageQuestion">Manage Question</a></div>
                       </div>
                      @else
                             <div class="row">

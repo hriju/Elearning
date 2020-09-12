@@ -16,6 +16,23 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
+    <script src="//code.jquery.com/jquery-1.12.3.js"></script>
+    <script src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+    {{--<script
+        src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
+    <link rel="stylesheet"
+          href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css">--}}
+
+
+    {{--<script src = "https://code.jquery.com/jquery-3.5.1.js" defer ></script>--}}
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+
+    {{--<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js" ></script>--}}
+
+
+
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
@@ -87,3 +104,4 @@
     </div>
 </body>
 </html>
+
