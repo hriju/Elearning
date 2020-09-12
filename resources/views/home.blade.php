@@ -15,18 +15,18 @@
                     @endif
                     @if (Auth::user()->role=='admin')
                       <div class="row">
-                          <div class="col-md-4">Course</div>
-                          <div class="col-md-4">Lesson</div>
-                          <div class="col-md-4">Question</div>
+                          <div class="col-md-4">Manage Course</div>
+                          <div class="col-md-4">Manage Lesson</div>
+                          <div class="col-md-4">Manage Question</div>
                       </div>
                      @else
                             <div class="row">
-                                <div class="col-md-12">List of Course</div>
-                                <li><a href="courses/1">course 1</a></li>
-                                <li><a href="courses/1">course 2</a></li>
-                                <li><a href="courses/1">course 3</a></li>
-                                <li><a href="courses/1">course 4</a></li>
-                                <li><a href="courses/1">course 5</a></li>
+
+                                    <div class="col-md-12">List of Course</div>
+                                    @foreach($course as $c)
+                                        <li><a href="course/{{$c->id}}">{{$c->title}}</a></li>
+                                    @endforeach
+
                             </div>
                         @endif
 

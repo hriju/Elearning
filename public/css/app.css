@@ -10898,4 +10898,9 @@ a.text-dark:focus {
     border-color: #dee2e6;
   }
 }
+.lesson{
+    text-align: center;
+    background-color: antiquewhite;
+}
+
 
