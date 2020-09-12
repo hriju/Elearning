@@ -16,8 +16,8 @@
                     @if (Auth::user()->role=='admin')
                       <div class="row">
                           <div class="col-md-4"><a href="{{route('manageCourse.index')}}">Manage Course</a></div>
-                          <div class="col-md-4"><a href="/manageLesson">Manage Lesson</a></div>
-                          <div class="col-md-4"><a href="/manageQuestion">Manage Question</a></div>
+                          <div class="col-md-4"><a href="{{route('manageLesson.index')}}">Manage Lesson</a></div>
+                          <div class="col-md-4"><a href="{{route('manageQuestion.index')}}">Manage Question</a></div>
                       </div>
                      @else
                             <div class="row">

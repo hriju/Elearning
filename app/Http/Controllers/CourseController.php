@@ -51,7 +51,7 @@ class CourseController extends Controller
 
         ]);
         $course->save();
-        return redirect('/manageCourse')->with('success', 'Course saved!');
+        return redirect('/manageCourse')->with('success', 'Course Inserted!');
     }
 
     /**

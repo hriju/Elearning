@@ -2,16 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="738fa75a-e6e4-4a0a-91e1-59367a66db39" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/course/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/course/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/lesson/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/lesson/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/lesson/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/question/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/question/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/question/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CourseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CourseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Course.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Course.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/course/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/course/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LessonController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LessonController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/QuestionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/QuestionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Lesson.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Lesson.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/question.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/question.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -151,7 +154,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/question" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -164,6 +167,9 @@
       <recent name="$PROJECT_DIR$/public/css" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/question" />
+      <recent name="$PROJECT_DIR$/resources/views/lesson" />
+      <recent name="$PROJECT_DIR$/resources/views/layouts" />
       <recent name="$PROJECT_DIR$/database/migrations" />
     </key>
   </component>
@@ -198,7 +204,7 @@
       <workItem from="1599656909089" duration="6112000" />
       <workItem from="1599717439074" duration="5000" />
       <workItem from="1599717456138" duration="3899000" />
-      <workItem from="1599726101648" duration="29483000" />
+      <workItem from="1599726101648" duration="40556000" />
     </task>
     <task id="LOCAL-00001" summary="Migrations file added">
       <created>1599717568165</created>
@@ -228,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599904426825</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Course CRUD added">
+      <created>1599931720635</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1599931720635</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,7 +265,8 @@
     <MESSAGE value="Migrations file added" />
     <MESSAGE value="User login registration added" />
     <MESSAGE value="Course, Lesson, questions view added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Course, Lesson, questions view added" />
+    <MESSAGE value="Course CRUD added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Course CRUD added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
