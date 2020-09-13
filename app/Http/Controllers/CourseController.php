@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\completed_lesson;
 use Illuminate\Http\Request;
 Use App\Models\Course;
 Use App\Models\Lesson;
+use Illuminate\Support\Facades\Auth;
 
 class CourseController extends Controller
 {
@@ -64,8 +66,13 @@ class CourseController extends Controller
     {
         //
         $course_lesson=Lesson::where('course_id',$id)->get();
+        //$completed=completed_lesson::where('lesson_id',$id)->where('user_id',Auth::user()->id)->pluck('is_completed');
+        $course_title=Course::where('id',$id)->select('title')->pluck('title');
         //dd($course_lesson);
-        return view('course.show',['lessons'=>$course_lesson]);
+        return view('course.show',['lessons'=>$course_lesson])->with('data',[
+            //'completed'=>$completed[0],
+            'course'=>$course_title[0],
+            'id'=>$id]);
     }
 
     /**

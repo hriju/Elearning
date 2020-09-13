@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">{{ __('Dashboard') }}</div>
+                    <div class="card-header"><h5><strong>Course:</strong>{{$data['course']}}</h5></div>
 
                     <div class="card-body">
                         @if (session('status'))
@@ -20,9 +20,12 @@
                             @if(!$lessons->isEmpty())
                                 @foreach($lessons as $lesson)
                                     <li><a href="lesson/{{$lesson->id}}">{{$lesson->lesson_title}}</a></li>
+                                   {{-- @if($course=1)
+                                        (Completed)
+                                    @endif--}}
                                 @endforeach
                             @else
-                                <li>   No Leson found</li>
+                                <li>   No Lesson found</li>
                             @endif
                             </ul>
 

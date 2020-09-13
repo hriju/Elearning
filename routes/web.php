@@ -21,9 +21,11 @@ Auth::routes();
 
 Route::get('/home', 'App\Http\Controllers\HomeController@index')->name('home');
 Route::get('/', 'App\Http\Controllers\HomeController@index')->name('home');
+Route::POST('/submitQuestion/{id}', 'App\Http\Controllers\LessonController@submit')->name('submitQuestion');
 Route::get('/course/{course}', 'App\Http\Controllers\CourseController@show');
 Route::get('/course/lesson/{lesson}', 'App\Http\Controllers\LessonController@show');
 Route::resource('/manageCourse', 'App\Http\Controllers\CourseController');
 Route::resource('/manageLesson', 'App\Http\Controllers\LessonController');
 Route::resource('/manageQuestion', 'App\Http\Controllers\QuestionController');
-/*Route::resource('contacts', 'ContactController');*/
+
+

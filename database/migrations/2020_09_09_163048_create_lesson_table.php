@@ -19,7 +19,7 @@ class CreateLessonTable extends Migration
             $table->string('lesson_desc');
             $table->integer('course_id')->unsigned();
             $table->foreign('course_id')->references('id')->on('course')->onDelete('cascade');
-            $table->boolean('status')->default(0);
+            $table->boolean('status')->default(1);
             $table->timestamps();
         });
     }

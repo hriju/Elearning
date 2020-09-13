@@ -27,7 +27,7 @@
                                     </div>
                                     <br />
                                 @endif
-                                <form method="post" action="{{ route('manageLesson.update', $lesson->id) }}">
+                                <form method="post" action="{{ route('manageLesson.update', $lesson->id)}}">
                                     @method('PATCH')
                                     @csrf
                                     <div class="form-group">

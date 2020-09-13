@@ -23,10 +23,11 @@
                             <div class="row">
 
                                     <div class="col-md-12">List of Course</div>
+                                    <ul>
                                     @foreach($course as $c)
                                         <li><a href="course/{{$c->id}}">{{$c->title}}</a></li>
                                     @endforeach
-
+                                    </ul>
                             </div>
                         @endif
 
