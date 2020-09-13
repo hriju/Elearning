@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="738fa75a-e6e4-4a0a-91e1-59367a66db39" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Models/completed_lesson.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_09_13_002959_create_lesson_completed_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeders/QuestionSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CourseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CourseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LessonController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LessonController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/QuestionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/QuestionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_09_163025_create_course_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_09_163025_create_course_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_09_163048_create_lesson_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_09_163048_create_lesson_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_09_163125_create_question_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_09_163125_create_question_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/course/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/course/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/lesson/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/lesson/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/lesson/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/lesson/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-    </list>
+    <list default="true" id="738fa75a-e6e4-4a0a-91e1-59367a66db39" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +189,7 @@
       <workItem from="1599656909089" duration="6112000" />
       <workItem from="1599717439074" duration="5000" />
       <workItem from="1599717456138" duration="3899000" />
-      <workItem from="1599726101648" duration="54477000" />
+      <workItem from="1599726101648" duration="54788000" />
     </task>
     <task id="LOCAL-00001" summary="Migrations file added">
       <created>1599717568165</created>
@@ -249,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599945179372</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Lesson Completion added.">
+      <created>1599963539626</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1599963539627</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
