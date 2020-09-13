@@ -21,7 +21,6 @@
                       </div>
                      @else
                             <div class="row">
-
                                     <div class="col-md-12">List of Course</div>
                                     <ul>
                                     @foreach($course as $c)
